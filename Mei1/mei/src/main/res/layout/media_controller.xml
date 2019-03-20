@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#aa000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:padding="12dp"
+        android:src="@drawable/video_pause" />
+
+    <TextView
+        android:id="@+id/time_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/mediacontroller_progress"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:max="100"
+        android:maxHeight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:progressDrawable="@drawable/bg_bar"
+        android:thumb="@drawable/control_progress_seek_btn" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/fullscreen"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent"
+        android:padding="12dp" />
+
+</LinearLayout>

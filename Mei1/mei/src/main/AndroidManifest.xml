@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mei"
+    android:versionCode="152"
+    android:versionName="1.7">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.mei.app.MApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mei.activitys.SplashActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mei.activitys.MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mei.activitys.WelcomeActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mei.activitys.DetailActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mei.activitys.RawplayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55c1fd4167e58e29340015fc"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <activity
+            android:name="com.mei.activitys.SettingActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.mei.activitys.FeedbackActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mei.activitys.AboutActivity"
+            android:label="@string/title_activity_about"></activity>
+        <activity
+            android:name="com.mei.activitys.SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.mei.activitys.SearchResultActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

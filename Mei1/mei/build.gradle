@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '24.0.2'
+
+    defaultConfig {
+        applicationId "com.mei"
+        minSdkVersion 14
+        multiDexEnabled true
+        targetSdkVersion 23
+        versionCode 152
+        versionName "1.7"//1.0.1 减包
+        vectorDrawables.useSupportLibrary = true
+        resConfigs "zh-rCN"
+    }
+    signingConfigs {
+        release {
+            storeFile file("online.keystore")
+            storePassword "000000"
+            keyAlias "mei"
+            keyPassword "000000"
+            v2SigningEnabled false
+        }
+
+//        debug {
+//            storeFile file("debug.keystore")
+//        }
+    }
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    android {
+        configurations.all {
+            resolutionStrategy.force 'com.android.support:multidex:1.0.3'
+        }
+    }
+}
+
+dependencies {
+//    api fileTree(include: ['*.jar'], dir: 'libs')
+//    compile project(':main')
+    compile project(':pullToRefreshlibrary')
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.facebook.fresco:fresco:1.5.0'
+    compile 'com.facebook.fresco:webpsupport:1.5.0'
+    compile 'com.facebook.fresco:animated-gif:1.5.0'
+
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+//        api files('libs/bolts-android-1.1.4.jar')
+    compile files('libs/com.umeng.fb.5.4.0.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/umeng-analytics-v5.5.3.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+}

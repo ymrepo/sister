@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">笑你妹</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pic">PicActivity</string>
+    <string name="title_activity_rawplay">RawplayActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+	<string name="about">    在本app发表笑话(图片)即意味着同意其笑话图片在本站内的公开发布与传播以及本站引用所产生的使用权，由于第三方下载而引起的传播和修改等衍生责任，本站不承担责任。\n
+	    				本页笑话图片内容由网友自行在论坛发布，本站仅提供笑话、图片存储空间服务，笑话(图片)上传者应自行负责所上传笑话(图片)涉及的法律责任，本站对帖文真实性、版权等概不负责，亦不承担任何法律责任。\n
+	    				本站对于上传的笑话、图片保留未经通知到本人立即删除的权利。\n
+	    				任何单位或个人认为本站所保存的笑话(图片)内容可能涉嫌侵犯其合法权益，应该及时向本站书面反馈，并提供身份证明、权属证明及详细侵权情况证明，本站在收到上述法律文件后，将会尽快移除被控侵权内容。</string>
+</resources>

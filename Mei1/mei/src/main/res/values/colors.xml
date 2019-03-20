@@ -1,0 +1,59 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_transparent">#00000000</color>
+    <color name="text_grey_dark">#333333</color>
+    <color name="line_divide">#c9c9c9</color>
+    <color name="text_mynum">#57a9e7</color>
+    <color name="text_red">#ff6b6b</color>
+    <color name="bg_itempress">#f2f2f2</color>
+    <color name="bg">#f2f2f2</color>
+    <color name="bg_half_transparent">#80000000</color>
+    <color name="fragment_title">#69c25a</color>
+    <color name="text_title">#221714</color>
+    <color name="line_title">#c6c9cc</color>
+    <color name="cursor">#003366</color>
+    <color name="text_blue">#0099FF</color>
+    <color name="tag_red">#E03131</color>
+    <color name="divide">#dddddd</color>
+    <color name="divide_bg">#f0f0f0</color>
+    <color name="setting_bg">#efeff4</color>
+    
+    <color name="text_grey1">#cdcdcd</color>
+    <color name="text_grey2">#cbcbcb</color>
+    <color name="text_grey4">#8d8d8d</color>
+    <color name="text_grey5">#5a6474</color>
+    <color name="text_grey6">#d9d9d9</color>
+    <color name="text_grey7">#8c8c8c</color>
+    <color name="text_grey8">#bebebe</color>
+    <color name="text_grey10">#808080</color>
+    <color name="text_grey11">#a6a6a6</color>
+    <color name="text_grey13">#959595</color>
+    <color name="text_grey15">#e5e5e5</color>
+    <color name="text_grey16">#372e2a</color>
+    <color name="text_grey17">#b9b9b9</color>
+    <color name="text_grey18">#7f7f7f</color>
+    <color name="text_grey19">#bfbfbf</color>
+    <color name="text_grey20">#c1c1c1</color>
+    <color name="text_grey21">#a4a4a4</color>
+    <color name="text_grey22">#707070</color>
+    <color name="text_grey23">#aaaaaa</color>
+    <color name="text_grey24">#b2b2b2</color>
+    <color name="text_grey25">#999999</color>
+    
+        <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+</resources>

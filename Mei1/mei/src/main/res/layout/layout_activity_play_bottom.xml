@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_half_transparent" >
+
+    <ImageView
+        android:id="@+id/play_play"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:src="@drawable/select_btn_pause" />
+
+    <ImageView
+        android:id="@+id/play_next"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/play_play"
+        android:src="@drawable/select_btn_next" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/play_curr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/play_next"
+        android:gravity="center_vertical"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/play_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_toLeftOf="@id/play_total_time"
+        android:layout_toRightOf="@id/play_curr_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100"
+        android:progress="0"
+        android:maxHeight="5dp"
+        android:progressDrawable="@drawable/bg_bar"
+        android:thumb="@drawable/control_progress_seek_btn" />
+
+</RelativeLayout>

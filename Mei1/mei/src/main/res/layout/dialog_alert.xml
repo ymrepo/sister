@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/corners_quickcharge_bg" >
+
+    <TextView
+        android:id="@+id/alert_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:textColor="@color/text_grey_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/alert_dialog_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_dialog_title"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:minHeight="40dp"
+        android:textColor="@color/text_grey_dark"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/alert_dialog_updateHint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_dialog_message"
+        android:gravity="left"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/alert_dialog_occupy"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/alert_dialog_updateHint"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_divide" />
+
+    <LinearLayout
+        android:id="@+id/alert_dialog_button_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_dialog_occupy"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/alert_dialog_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:height="50dp"
+            android:text="取消"
+            android:textColor="@color/text_mynum"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/alert_dialog_middle"
+            android:layout_width="1px"
+            android:layout_height="50dp"
+            android:background="@color/line_divide" />
+
+        <Button
+            android:id="@+id/alert_dialog_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:height="50dp"
+            android:text="确定"
+            android:textColor="@color/text_red"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

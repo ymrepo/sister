@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="local_url">http://123.56.86.148</string>
+    <string name="hk_url">http://api.3721data.com</string>
+    <string name="url">http://www.laoshutv.com:8088</string>
+</resources>
